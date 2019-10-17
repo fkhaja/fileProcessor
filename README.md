@@ -5,7 +5,7 @@
 	
 	
 
-##Input File Format 1
+###Input File Format 1
     In this format each record is in Byte format and 80 chars wide. Each record has the following elements
     
 | Element Name	| Type/Format	| Max Length	| Optional	| Default	| Sample	|
@@ -24,22 +24,26 @@
 E.g. for file 1 (country is absent)
 
 1
+
 Jon       Abner            200312081 Jay St  Apt 498   Dublin    CA   49567
+
 Will      Abner            200312081 Jay St  Apt 498   Dublin    CA   49567
 
 
-##Input File Format 2
+###Input File Format 2
 	In this format each element is comma separated. The characteristics of the elements are as mentioned above for format 1. No space filling is done in this case, however commas will be present as place holders for absent elements.
 	
 	E.g  for file format 2 
 
-2
-Jon,Abner,20031208,1 Jay St,Apt 498,Dublin,CA,,49567
+2 
+
+Jon,Abner,20031208,1 Jay St,Apt 498,Dublin,CA,,49567 
+
 Will,Abner,20031208,1 Jay St,Apt 498,Dublin,CA,USA,49567
  
 
 
-##Output file format
+###Output file format
 	The output should be sorted by the first name, last name or start date depending on an argument passed in to the application at the time of invocation.
 	The output should be written to an output file in the following format. Dates should be in human readable form (e.g. mm/dd/yyyy)
 
@@ -61,13 +65,13 @@ E.g
    Dublin,CA,
    USA,49567
 
-##Building the Project
+###Building the Project
 	The project can be built using Maven. To build, run the Maven command:
 ```console
 mvn clean package
 ```
 
-##Running the Application
+###Running the Application
 	The application is packaged in a jar file. Java 8 is needed in order to run this application. Check your java version by running 
 
 ```console
